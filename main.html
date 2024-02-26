@@ -13,44 +13,44 @@
  <div class="container mt-5">
         <h2>Internship Form</h2>
         <form>
-            <div class="form-group">
+            <div class="form-control">
                 <label for="first-name-input">First Name</label>
-                <input type="text" class="form-control" id="first-name-input" placeholder="Enter First Name">
+                <input type="text" class="form-control" id="first-name-input" placeholder="Enter First Name" required>
                 <div class="invalid-feedback">
                     Please enter your first name.
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-control">
                 <label for="last-name-input">Last Name</label>
-                <input type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name">
+                <input type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name" required>
                 <div class="invalid-feedback">
                     Please enter your last name.
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-control">
                 <label for="email-input">Email Address</label>
-                <input type="email" class="form-control" id="email-input" placeholder="Enter Email">
+                <input type="email" class="form-control" id="email-input" placeholder="Enter Email" required>
                 <div class="invalid-feedback">
                     Please enter a valid email address.
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-label">
                 <label for="college-input">College Name</label>
-                <input type="text" class="form-control" id="college-input" placeholder="Enter College Name">
+                <input type="text" class="form-control" id="college-input" placeholder="Enter College Name" required>
                 <div class="invalid-feedback">
                     Please enter your college name.
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-control">
                 <label for="roll-no-input">Roll No</label>
-                <input type="text" class="form-control" id="roll-no-input" placeholder="Enter Roll No">
+                <input type="text" class="form-control" id="roll-no-input" placeholder="Enter Roll No" required>
                 <div class="invalid-feedback">
                     Please enter your roll number.
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-label">
                 <label for="grad-year-select">Graduation Year</label>
-                <select class="form-control" id="grad-year-select">
+                <select class="form-select" id="grad-year-select">
                     <option value="">Select Graduation Year</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
@@ -61,8 +61,8 @@
                     Please select your graduation year.
                 </div>
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="conditions-checkbox">
+            <div class="form-check-input">
+                <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
                 <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
                 <div class="invalid-feedback">
                     You must agree to the terms and conditions.
