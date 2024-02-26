@@ -8,35 +8,67 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
-		<label for="first-name-input">First Name</label>
-		<input class="form-control" id="first-name-input" required>
-		
-		<label for="last-name-input">Last Name</label>
-		<input class="form-control" id="last-name-input" required>
-		
-		<label for="email-input">Email Addres</label>
-		<input class="form-control" id="email-input" required>
-		
-		<label for="college-input">Collage</label>
-		<input class="form-control" id="college-input" required>
-		
-		<label for="grad-year-select">Graduation Year</label>
-		<select class="form-select" id="grad-year-select">
-			<option>2020</option>
-			<option>2021</option>
-			<option>2022</option>
-			<option>2023</option>
-		</select>
-		
-		<label for="roll-no-input">Roll No.</label>
-		<input class="form-control" id="roll-no-input" required>
-
-		<input type="checkbox" id="complete">
-		<label for="complete"> Please mark all the check boxes</label>
-
-		<button class="form-check-input" id="conditions-checkbox">Standerd form</button>
-	</form>
+ <div class="container mt-5">
+        <h2>Intern Application Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name-input">First Name</label>
+                <input type="text" class="form-control" id="first-name-input" placeholder="Enter First Name">
+                <div class="invalid-feedback">
+                    Please enter your first name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="last-name-input">Last Name</label>
+                <input type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name">
+                <div class="invalid-feedback">
+                    Please enter your last name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email-input">Email</label>
+                <input type="email" class="form-control" id="email-input" placeholder="Enter Email">
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="college-input">College Name</label>
+                <input type="text" class="form-control" id="college-input" placeholder="Enter College Name">
+                <div class="invalid-feedback">
+                    Please enter your college name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="roll-no-input">Roll No</label>
+                <input type="text" class="form-control" id="roll-no-input" placeholder="Enter Roll No">
+                <div class="invalid-feedback">
+                    Please enter your roll number.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="graduation-year-select">Graduation Year</label>
+                <select class="form-control" id="graduation-year-select">
+                    <option value="">Select Graduation Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select your graduation year.
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="conditions-checkbox">
+                <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
+                <div class="invalid-feedback">
+                    You must agree to the terms and conditions.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
