@@ -20,6 +20,7 @@
                     Please enter your first name.
                 </div>
             </div>
+			<br><br>
             <div class="form-control">
                 <label for="last-name-input">Last Name</label>
                 <input type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name" required>
@@ -27,6 +28,7 @@
                     Please enter your last name.
                 </div>
             </div>
+			<br><br>
             <div class="form-control">
                 <label for="email-input">Email Address</label>
                 <input type="email" class="form-control" id="email-input" placeholder="Enter Email" required>
@@ -34,6 +36,7 @@
                     Please enter a valid email address.
                 </div>
             </div>
+			<br><br>
             <div class="form-label">
                 <label for="college-input">College</label>
                 <input type="text" class="form-control" id="college-input" placeholder="Enter College Name" required>
@@ -41,9 +44,10 @@
                     Please enter your college name.
                 </div>
             </div>
+			<br><br>
 			<div class="form-select">
-                <label for="grad-year-select">Graduation Year</label>
-                <select class="form-select" id="grad-year-select">
+                <label for="grad-year-select">Graduation Year</label required>
+                <select class="form-select" id="grad-year-select" required>
                     <option value="">Select Graduation Year</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
@@ -54,6 +58,7 @@
                     Please select your graduation year.
                 </div>
             </div>
+			<br><br>
             <div class="form-control">
                 <label for="roll-no-input">Roll No.</label>
                 <input type="text" class="form-control" id="roll-no-input" placeholder="Enter Roll No" required>
@@ -61,14 +66,15 @@
                     Please enter your roll number.
                 </div>
             </div>
-            
-            <div class="conditions-checkbox">
-                <input type="checkbox" class="conditions-checkbox" id="conditions-checkbox" required>
-                <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
+            <br><br>
+            <div class="form-check-input">
+                <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+                <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
                 <div class="invalid-feedback">
                     You must agree to the terms and conditions.
                 </div>
             </div>
+			<br><br>
             <button type="submit" class="btn btn-primary">Submit form</button>
         </form>
     </div>
